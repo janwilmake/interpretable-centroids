@@ -34,3 +34,4 @@ For every category with more than `itemsPerCategoryCount` items, apply `assignTo
 
 1. finish DORM 2.0 and connect expose GET /api/db/query/raw/QUERY for the hackernews dataset
 2. Put this in a cloudflare queue + worker that uses that dataset to categorize the top 100k stories of all time with DeepSeek
+3. Make the circle round by vectorizing the categories and finding top categories for a given search term using vector comparison, then apply a follow up vector comparison within the top N categories OR immediately throw an LLM at it at this stage, may be slower but may be needed to get it good.
