@@ -27,3 +27,8 @@ Function `asignToCategory`:
 2. Insert all items in these categories in batches of `batchSize` items each batch (using LLM)
 
 For every category with more than `itemsPerCategoryCount` items, apply `assignToCategory`.
+
+# Next Steps
+
+1. finish DORM 2.0 and connect expose GET /api/db/query/raw/QUERY for the hackernews dataset
+2. Put this in a cloudflare queue + worker that uses that dataset to categorize the top 100k stories of all time with DeepSeek
