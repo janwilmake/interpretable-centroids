@@ -17,6 +17,8 @@ The question remains:
 - how to categorize in a way that makes it super easy to search
 - can these categories be made dynamic?
 
+Related (found this after making POC): https://arxiv.org/abs/2502.09667
+
 # Simplest possible implementation: POC
 
 We want to divide `itemCount` items into `categoryCount` equally sized categories. This means we need `itemCount/categoryCount=itemsPerCategoryCount` How? For vector search people do this using mathematical vector clusters, a.k.a. centroids. We want to do this using LLMs.
