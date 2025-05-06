@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "test": "bun run poc.ts"
+  }
+}
